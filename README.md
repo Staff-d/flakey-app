@@ -8,8 +8,16 @@ which is not showcased in the aforementioned blog.
 It features a [references](./flake.nix) to another flake-based project (the [flakey-lib](https://github.com/Staff-d/flakey-lib)),
 which provides a nonsensical function to calculate something. 
 
+## How to build
+
+If you've read this far, I assume you now how to use [nix](https://nixos.org/).
+
+[Eelcos blog](https://www.tweag.io/blog/2020-05-25-flakes/) provides a short intro into how to activate the flakes 
+feature and how to build a flake. If you are lazy, you can also call use the [`build.sh](./build.sh) I've provided 
+so you don't have to fiddle with the flags.
+
 ## Issues
 
-To reproduce my usual python workflow, I wanted to activate `pylint` and `pytest-cov` as usual via a [setup.cfg](./setup.cfg). 
+To reproduce my usual python workflow, I wanted to activate `pylint` and `pytest-cov` via a [setup.cfg](./setup.cfg). 
 As of the writing of this README, this crashes nix with a `boost::bad_format_string` exception. I've reported this
 bug [here](https://github.com/NixOS/nixpkgs/issues/93133).
